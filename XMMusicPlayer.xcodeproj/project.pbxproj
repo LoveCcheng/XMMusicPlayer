@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		36CFE3D9D8DE9E9E0B2725D6 /* libPods-XMMusicPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF70E70A147B5BF3BF46EFA /* libPods-XMMusicPlayer.a */; };
 		FC5B8C181DFFDC65008C46EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C171DFFDC65008C46EA /* main.m */; };
-		FC5B8C1B1DFFDC65008C46EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C1A1DFFDC65008C46EA /* AppDelegate.m */; };
 		FC5B8C1E1DFFDC65008C46EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C1D1DFFDC65008C46EA /* ViewController.m */; };
 		FC5B8C211DFFDC65008C46EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5B8C1F1DFFDC65008C46EA /* Main.storyboard */; };
 		FC5B8C231DFFDC65008C46EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5B8C221DFFDC65008C46EA /* Assets.xcassets */; };
 		FC5B8C261DFFDC65008C46EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5B8C241DFFDC65008C46EA /* LaunchScreen.storyboard */; };
 		FC5B8C311DFFDC65008C46EA /* XMMusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C301DFFDC65008C46EA /* XMMusicPlayerTests.m */; };
 		FC5B8C3C1DFFDC65008C46EA /* XMMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C3B1DFFDC65008C46EA /* XMMusicPlayerUITests.m */; };
+		FCD114531E00DA9700195A46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD114521E00DA9700195A46 /* AppDelegate.m */; };
+		FCD114571E00DAE100195A46 /* XMLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD114561E00DAE100195A46 /* XMLaunchView.m */; };
+		FCD114591E00DB0B00195A46 /* 引导页.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD114581E00DB0B00195A46 /* 引导页.png */; };
+		FCD1145B1E00DED100195A46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD1145A1E00DED100195A46 /* Images.xcassets */; };
+		FCD114611E00E46C00195A46 /* XMadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD114601E00E46C00195A46 /* XMadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,6 @@
 		F2353F05C43C19403B69A466 /* Pods-XMMusicPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMusicPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMMusicPlayer/Pods-XMMusicPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		FC5B8C131DFFDC65008C46EA /* XMMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5B8C171DFFDC65008C46EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FC5B8C191DFFDC65008C46EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FC5B8C1A1DFFDC65008C46EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FC5B8C1C1DFFDC65008C46EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FC5B8C1D1DFFDC65008C46EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FC5B8C201DFFDC65008C46EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,15 @@
 		FC5B8C371DFFDC65008C46EA /* XMMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5B8C3B1DFFDC65008C46EA /* XMMusicPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMMusicPlayerUITests.m; sourceTree = "<group>"; };
 		FC5B8C3D1DFFDC65008C46EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCD114511E00DA9700195A46 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCD114521E00DA9700195A46 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCD114551E00DAE100195A46 /* XMLaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLaunchView.h; sourceTree = "<group>"; };
+		FCD114561E00DAE100195A46 /* XMLaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLaunchView.m; sourceTree = "<group>"; };
+		FCD114581E00DB0B00195A46 /* 引导页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "引导页.png"; sourceTree = "<group>"; };
+		FCD1145A1E00DED100195A46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCD1145E1E00E28300195A46 /* XMPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMPrefixHeader.pch; sourceTree = "<group>"; };
+		FCD1145F1E00E46C00195A46 /* XMadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMadViewController.h; sourceTree = "<group>"; };
+		FCD114601E00E46C00195A46 /* XMadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMadViewController.m; sourceTree = "<group>"; };
 		FCF70E70A147B5BF3BF46EFA /* libPods-XMMusicPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XMMusicPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,14 +136,17 @@
 		FC5B8C151DFFDC65008C46EA /* XMMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				FC5B8C191DFFDC65008C46EA /* AppDelegate.h */,
-				FC5B8C1A1DFFDC65008C46EA /* AppDelegate.m */,
+				FCD114621E00EA5F00195A46 /* Music(音乐) */,
+				FCD1145C1E00E1E100195A46 /* Tool */,
+				FCD114541E00DAD200195A46 /* Beforeview */,
+				FCD114501E00DA9700195A46 /* Appdelegate */,
 				FC5B8C1C1DFFDC65008C46EA /* ViewController.h */,
 				FC5B8C1D1DFFDC65008C46EA /* ViewController.m */,
 				FC5B8C1F1DFFDC65008C46EA /* Main.storyboard */,
 				FC5B8C221DFFDC65008C46EA /* Assets.xcassets */,
 				FC5B8C241DFFDC65008C46EA /* LaunchScreen.storyboard */,
 				FC5B8C271DFFDC65008C46EA /* Info.plist */,
+				FCD1145A1E00DED100195A46 /* Images.xcassets */,
 				FC5B8C161DFFDC65008C46EA /* Supporting Files */,
 			);
 			path = XMMusicPlayer;
@@ -162,6 +176,42 @@
 				FC5B8C3D1DFFDC65008C46EA /* Info.plist */,
 			);
 			path = XMMusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+		FCD114501E00DA9700195A46 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FCD114511E00DA9700195A46 /* AppDelegate.h */,
+				FCD114521E00DA9700195A46 /* AppDelegate.m */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		FCD114541E00DAD200195A46 /* Beforeview */ = {
+			isa = PBXGroup;
+			children = (
+				FCD114581E00DB0B00195A46 /* 引导页.png */,
+				FCD114551E00DAE100195A46 /* XMLaunchView.h */,
+				FCD114561E00DAE100195A46 /* XMLaunchView.m */,
+				FCD1145F1E00E46C00195A46 /* XMadViewController.h */,
+				FCD114601E00E46C00195A46 /* XMadViewController.m */,
+			);
+			path = Beforeview;
+			sourceTree = "<group>";
+		};
+		FCD1145C1E00E1E100195A46 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FCD1145E1E00E28300195A46 /* XMPrefixHeader.pch */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		FCD114621E00EA5F00195A46 /* Music(音乐) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Music(音乐)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +279,7 @@
 		FC5B8C0B1DFFDC65008C46EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XM;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = montnets;
 				TargetAttributes = {
@@ -273,6 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD114591E00DB0B00195A46 /* 引导页.png in Resources */,
+				FCD1145B1E00DED100195A46 /* Images.xcassets in Resources */,
 				FC5B8C261DFFDC65008C46EA /* LaunchScreen.storyboard in Resources */,
 				FC5B8C231DFFDC65008C46EA /* Assets.xcassets in Resources */,
 				FC5B8C211DFFDC65008C46EA /* Main.storyboard in Resources */,
@@ -348,9 +401,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD114611E00E46C00195A46 /* XMadViewController.m in Sources */,
+				FCD114571E00DAE100195A46 /* XMLaunchView.m in Sources */,
 				FC5B8C1E1DFFDC65008C46EA /* ViewController.m in Sources */,
-				FC5B8C1B1DFFDC65008C46EA /* AppDelegate.m in Sources */,
 				FC5B8C181DFFDC65008C46EA /* main.m in Sources */,
+				FCD114531E00DA9700195A46 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +555,8 @@
 			baseConfigurationReference = A7F95E37E15B13C1D9F8C44D /* Pods-XMMusicPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMMusicPlayer/Tool/XMPrefixHeader.pch";
 				INFOPLIST_FILE = XMMusicPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -513,6 +570,8 @@
 			baseConfigurationReference = F2353F05C43C19403B69A466 /* Pods-XMMusicPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMMusicPlayer/Tool/XMPrefixHeader.pch";
 				INFOPLIST_FILE = XMMusicPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

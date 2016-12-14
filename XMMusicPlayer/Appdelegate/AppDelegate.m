@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "XMLaunchView.h"
+#import "ViewController.h"
+#import "XMadViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,10 +21,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor=[UIColor redColor];
-    [self.window makeKeyAndVisible];
+//    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.backgroundColor=[UIColor redColor];
+//    [self.window makeKeyAndVisible];
+    XMLaunchView *adView=[[XMLaunchView alloc]initWithWindow:self.window withType:LauncgtypeAd];
+    adView.imageUrl=@"http://pic.qiantucdn.com/58pic/17/80/57/94s58PICA7j_1024.jpg";
     
+    [adView setClickCallBlock:^(NSInteger tag) {
+        if (tag == 1100) {
+//            NSLog(@"点击广告回调");
+            XMadViewController *adv=[[XMadViewController alloc]init];
+            [self.window.rootViewController presentViewController:adv animated:YES completion:nil];
+        }else{
+            ViewController *vc=[[ViewController alloc]init];
+            UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
+            self.window.rootViewController = nav;
+        
+        }
+//        if (tag == 1101)
+//        {
+//            NSLog(@"点击跳过回调");
+////            ViewController *vc=[[ViewController alloc]init];
+////            self.window.rootViewController = vc;
+//        }else{
+//            NSLog(@"倒计时完成后的回调");
+//        }
+    }];
     return YES;
 }
 
