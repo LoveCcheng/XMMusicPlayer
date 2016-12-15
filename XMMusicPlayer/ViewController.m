@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XMMusicViewController.h"
 
 @interface ViewController ()
 
@@ -21,21 +22,16 @@
     self.title=@"主界面";
     
     UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(100,150,XMScreenW-200,50);
-    button.backgroundColor = [UIColor brownColor];
+    button.frame = CGRectMake(100,150,XMScreenW-200,50);    button.backgroundColor = [UIColor brownColor];
     [button setTitle:@"音频播放" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:14];
     [button addTarget:self action:@selector(MusicBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
-    
 }
 -(void)MusicBtnClick{
     XMLog(@"音频播放");
-    
-    
-    
-    
-    
+    XMMusicViewController *music=[[XMMusicViewController alloc]init];
+    [self presentViewController:music animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
