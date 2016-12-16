@@ -8,6 +8,10 @@
 
 #import "XMMusicViewController.h"
 #import <Masonry.h>
+#import "XMMusicModel.h"
+#import <MJExtension.h>
+#import "XMMusicPlayer.h"
+
 
 //间隔
 #define widthSpace 50
@@ -19,9 +23,36 @@
 /** 歌手头像 */
 @property (nonatomic,strong) UIImageView *IconImageView;
 
+/** 歌曲数组 */
+@property (nonatomic,strong) NSArray *musicArr;
+/** 当前歌曲索引 */
+@property (nonatomic,assign) NSInteger currentMusicIndex;
+/** 定时器 */
+@property (nonatomic,strong) NSTimer *timer;
+
+/** 显示当前时间 */
+@property (nonatomic,strong) UILabel *currentlabelTime;
+/** 显示总时间时间 */
+@property (nonatomic,strong) UILabel *DurationlabelTime;
+/** 进度条 */
+@property (nonatomic,strong) UISlider *slider;
+/** 上一曲按钮 */
+@property (nonatomic,strong) UIButton *proButton;
+/** 播放按钮 */
+@property (nonatomic,strong) UIButton *PlayButton;
+/** 下一曲按钮 */
+@property (nonatomic,strong) UIButton *nextButton;
+
 @end
 
 @implementation XMMusicViewController
+
+-(NSArray *)musicArr{
+    if (!_musicArr) {
+        _musicArr =[XMMusicModel mj_objectArrayWithFilename:@"mlist.plist"];
+    }
+    return _musicArr;
+}
 
 
 -(UIImageView *)imageViewBG{
@@ -96,8 +127,6 @@
         make.height.equalTo(@30);
         
     }];
-  
-    
 }
 /** 上面的控件 */
 -(void)viewBelongtoTopview:(UIView *)topview{
@@ -157,6 +186,7 @@
     //左边label
     UILabel *leftLa = [[UILabel alloc]initWithFrame:CGRectMake(10, 7, 60, 30)];
     //leftLa.backgroundColor=[UIColor redColor];
+    self.currentlabelTime=leftLa;
     leftLa.text=@"00 : 00";
     leftLa.textAlignment=NSTextAlignmentCenter;
     leftLa.textColor=[UIColor whiteColor];
@@ -165,6 +195,7 @@
     
     //右边label
     UILabel *rightLa = [[UILabel alloc]init];
+    self.DurationlabelTime=rightLa;
     //rightLa.backgroundColor=[UIColor redColor];
     rightLa.text=@"00 : 00";
     rightLa.textAlignment=NSTextAlignmentCenter;
@@ -182,12 +213,14 @@
     
     //中间的进度条
     UISlider *slider=[[UISlider alloc]init];
+    self.slider = slider;
     [bottomView addSubview:slider];
     //设置slider属性
     slider.maximumTrackTintColor = [UIColor whiteColor];
     slider.minimumTrackTintColor=[UIColor greenColor];
     slider.thumbTintColor = [UIColor greenColor];
     [slider setThumbImage:[UIImage imageNamed:@"player_slider_playback_thumb"] forState:UIControlStateNormal];
+    [slider addTarget:self action:@selector(ChangeSliderValue) forControlEvents:UIControlEventValueChanged];
     
     
     [slider mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -198,32 +231,116 @@
     }];
     
     
-    
-    
     //下面的三个按钮
     CGFloat butWidth = (XMScreenW-100-30)/3.0;
     
     UIButton *leftBut=[UIButton buttonWithType:UIButtonTypeCustom];
+    self.proButton=leftBut;
     leftBut.frame=CGRectMake(50, 50, butWidth, butWidth);
+    leftBut.tag=110;
     [leftBut setImage:[UIImage imageNamed:@"player_btn_pre_normal"] forState:UIControlStateNormal];
     [bottomView addSubview:leftBut];
+    [leftBut addTarget:self action:@selector(buttonClickMusicPro) forControlEvents:UIControlEventTouchUpInside];
     
     
     UIButton *MidBut=[UIButton buttonWithType:UIButtonTypeCustom];
+    self.PlayButton=MidBut;
     MidBut.frame=CGRectMake(butWidth+50+10, 50, butWidth, butWidth);
     //[MidBut sizeToFit];
+    MidBut.tag=111;
     [MidBut setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [MidBut setImage:[UIImage imageNamed:@"player_btn_pause_normal"] forState:UIControlStateNormal];
+    [MidBut setImage:[UIImage imageNamed:@"player_btn_play_normal"] forState:UIControlStateNormal];
+    [MidBut setImage:[UIImage imageNamed:@"player_btn_pause_normal"] forState:UIControlStateSelected];
     [bottomView addSubview:MidBut];
+    [MidBut addTarget:self action:@selector(buttonClickMusicPlay) forControlEvents:UIControlEventTouchUpInside];
     
     
     UIButton *RightBut=[UIButton buttonWithType:UIButtonTypeCustom];
+    self.nextButton=RightBut;
     RightBut.frame=CGRectMake(butWidth+50+10+butWidth+10, 50, butWidth, butWidth);
     [RightBut setImage:[UIImage imageNamed:@"player_btn_next_normal"] forState:UIControlStateNormal];
     [bottomView addSubview:RightBut];
+    RightBut.tag=112;
+    [RightBut addTarget:self action:@selector(buttonClickMusicNext) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
+/** 按钮点击事件 */
+/** 上一曲 */
+-(void)buttonClickMusicPro{
+    XMLog(@"---上一曲按钮");
+    
+}
+
+-(void)buttonClickMusicPlay{
+    XMLog(@"---播放按钮");
+    XMMusicPlayer *playManager=[XMMusicPlayer sharePlayManager];
+    if (self.PlayButton.selected == NO) {
+        [self startUpdateProgress];
+        XMMusicModel *music = self.musicArr[self.currentMusicIndex];
+        [playManager playMusicWithFileName:music.mp3 didComplete:^{
+            [self buttonClickMusicNext];
+        }];
+        self.PlayButton.selected=YES;
+    }else{
+        self.PlayButton.selected=NO;
+        [playManager pause];
+        [self stopUpdateProgress];
+    }
+    
+    
+}
+/** 下一曲 */
+-(void)buttonClickMusicNext{
+    XMLog(@"---下一曲按钮");
+    if (self.currentMusicIndex == self.musicArr.count-1) {
+        self.currentMusicIndex=0;
+    }else{
+        self.currentMusicIndex++;
+    }
+    
+    [self changeMusic];
+    
+}
+/** 改变歌曲 */
+-(void)changeMusic{
+    
+    //先销毁定时器
+    [self stopUpdateProgress];
+    
+    XMMusicPlayer *playmanager=[XMMusicPlayer sharePlayManager];
+    self.DurationlabelTime.text=[self stringwithTime:playmanager.duration];
+    [self buttonClickMusicPlay];
+}
+
+/** 开启定时器,刷新进度条 */
+-(void)startUpdateProgress{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateProgress) userInfo:nil repeats:YES];
+
+}
+/** 停止定时器 */
+-(void)stopUpdateProgress{
+    [self.timer invalidate];
+    self.timer=nil;
+}
+/** 刷新进度条 */
+-(void)updateProgress{
+    XMMusicPlayer *playmanager=[XMMusicPlayer sharePlayManager];
+    self.currentlabelTime.text = [self stringwithTime:playmanager.currentTimes];
+    self.DurationlabelTime.text=[self stringwithTime:playmanager.duration];
+    self.slider.value = playmanager.currentTimes / playmanager.duration;
+}
+
+-(NSString *)stringwithTime:(NSTimeInterval)time{
+    int minute = time / 60;
+    int second = (int)time % 60;
+    return [NSString stringWithFormat:@"%02d:%02d",minute,second];
+}
+/** 拖动slider事件 */
+-(void)ChangeSliderValue{
+    XMMusicPlayer *playmanager=[XMMusicPlayer sharePlayManager];
+    playmanager.currentTimes = self.slider.value *playmanager.duration;
+}
 
 /** 点击按钮退出 */
 -(void)buttonBack{
@@ -262,6 +379,8 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+
+
 
 
 

@@ -16,6 +16,33 @@
 		FC5B8C311DFFDC65008C46EA /* XMMusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C301DFFDC65008C46EA /* XMMusicPlayerTests.m */; };
 		FC5B8C3C1DFFDC65008C46EA /* XMMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5B8C3B1DFFDC65008C46EA /* XMMusicPlayerUITests.m */; };
 		FC759CED1E02384D0093C52E /* 朴翔.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC759CEC1E02384D0093C52E /* 朴翔.jpg */; };
+		FC86DE9A1E0393040021ED11 /* mlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC86DE991E0393040021ED11 /* mlist.plist */; };
+		FC86DEB41E0393150021ED11 /* buyao.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC86DE9C1E0393150021ED11 /* buyao.wav */; };
+		FC86DEB51E0393150021ED11 /* chatcome.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC86DE9D1E0393150021ED11 /* chatcome.wav */; };
+		FC86DEB61E0393150021ED11 /* eason.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC86DE9E1E0393150021ED11 /* eason.jpg */; };
+		FC86DEB71E0393150021ED11 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC86DE9F1E0393150021ED11 /* test.wav */; };
+		FC86DEB81E0393150021ED11 /* 包师语 - 彩虹 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA01E0393150021ED11 /* 包师语 - 彩虹 (Live).lrc */; };
+		FC86DEB91E0393150021ED11 /* 包师语 - 彩虹 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA11E0393150021ED11 /* 包师语 - 彩虹 (Live).mp3 */; };
+		FC86DEBA1E0393150021ED11 /* 包师语.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA21E0393150021ED11 /* 包师语.png */; };
+		FC86DEBB1E0393150021ED11 /* 安河桥北.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA31E0393150021ED11 /* 安河桥北.jpg */; };
+		FC86DEBC1E0393150021ED11 /* 宋冬野 - 安河桥.lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA41E0393150021ED11 /* 宋冬野 - 安河桥.lrc */; };
+		FC86DEBD1E0393150021ED11 /* 宋冬野 - 安河桥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA51E0393150021ED11 /* 宋冬野 - 安河桥.mp3 */; };
+		FC86DEBE1E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA61E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).lrc */; };
+		FC86DEBF1E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA71E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).mp3 */; };
+		FC86DEC01E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA81E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).lrc */; };
+		FC86DEC11E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEA91E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).mp3 */; };
+		FC86DEC21E0393150021ED11 /* 徐歌阳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEAA1E0393150021ED11 /* 徐歌阳.jpg */; };
+		FC86DEC31E0393150021ED11 /* 徐歌阳1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEAB1E0393150021ED11 /* 徐歌阳1.jpg */; };
+		FC86DEC41E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEAC1E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).lrc */; };
+		FC86DEC51E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEAD1E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).mp3 */; };
+		FC86DEC61E0393150021ED11 /* 曾敏杰.png in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEAE1E0393150021ED11 /* 曾敏杰.png */; };
+		FC86DEC71E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEAF1E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).lrc */; };
+		FC86DEC81E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEB01E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).mp3 */; };
+		FC86DEC91E0393150021ED11 /* 朴翔.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEB11E0393150021ED11 /* 朴翔.jpg */; };
+		FC86DECA1E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEB21E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc */; };
+		FC86DECB1E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC86DEB31E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 */; };
+		FC86DECE1E0393950021ED11 /* XMMusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86DECD1E0393950021ED11 /* XMMusicModel.m */; };
+		FC86DED11E03996F0021ED11 /* XMMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC86DED01E03996F0021ED11 /* XMMusicPlayer.m */; };
 		FCB6E9CC1E027AC200F1769E /* UIView+XMframe.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6E9CB1E027AC200F1769E /* UIView+XMframe.m */; };
 		FCD114531E00DA9700195A46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD114521E00DA9700195A46 /* AppDelegate.m */; };
 		FCD114571E00DAE100195A46 /* XMLaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD114561E00DAE100195A46 /* XMLaunchView.m */; };
@@ -60,6 +87,35 @@
 		FC5B8C3B1DFFDC65008C46EA /* XMMusicPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMMusicPlayerUITests.m; sourceTree = "<group>"; };
 		FC5B8C3D1DFFDC65008C46EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC759CEC1E02384D0093C52E /* 朴翔.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "朴翔.jpg"; sourceTree = "<group>"; };
+		FC86DE991E0393040021ED11 /* mlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mlist.plist; sourceTree = "<group>"; };
+		FC86DE9C1E0393150021ED11 /* buyao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buyao.wav; sourceTree = "<group>"; };
+		FC86DE9D1E0393150021ED11 /* chatcome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chatcome.wav; sourceTree = "<group>"; };
+		FC86DE9E1E0393150021ED11 /* eason.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eason.jpg; sourceTree = "<group>"; };
+		FC86DE9F1E0393150021ED11 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		FC86DEA01E0393150021ED11 /* 包师语 - 彩虹 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "包师语 - 彩虹 (Live).lrc"; sourceTree = "<group>"; };
+		FC86DEA11E0393150021ED11 /* 包师语 - 彩虹 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "包师语 - 彩虹 (Live).mp3"; sourceTree = "<group>"; };
+		FC86DEA21E0393150021ED11 /* 包师语.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "包师语.png"; sourceTree = "<group>"; };
+		FC86DEA31E0393150021ED11 /* 安河桥北.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "安河桥北.jpg"; sourceTree = "<group>"; };
+		FC86DEA41E0393150021ED11 /* 宋冬野 - 安河桥.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宋冬野 - 安河桥.lrc"; sourceTree = "<group>"; };
+		FC86DEA51E0393150021ED11 /* 宋冬野 - 安河桥.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "宋冬野 - 安河桥.mp3"; sourceTree = "<group>"; };
+		FC86DEA61E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "徐歌阳 - 一万次悲伤 (Live).lrc"; sourceTree = "<group>"; };
+		FC86DEA71E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "徐歌阳 - 一万次悲伤 (Live).mp3"; sourceTree = "<group>"; };
+		FC86DEA81E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "徐歌阳 - 追梦赤子心 (Live).lrc"; sourceTree = "<group>"; };
+		FC86DEA91E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "徐歌阳 - 追梦赤子心 (Live).mp3"; sourceTree = "<group>"; };
+		FC86DEAA1E0393150021ED11 /* 徐歌阳.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "徐歌阳.jpg"; sourceTree = "<group>"; };
+		FC86DEAB1E0393150021ED11 /* 徐歌阳1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "徐歌阳1.jpg"; sourceTree = "<group>"; };
+		FC86DEAC1E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "曾敏杰 - 伤痕 (Live).lrc"; sourceTree = "<group>"; };
+		FC86DEAD1E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "曾敏杰 - 伤痕 (Live).mp3"; sourceTree = "<group>"; };
+		FC86DEAE1E0393150021ED11 /* 曾敏杰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "曾敏杰.png"; sourceTree = "<group>"; };
+		FC86DEAF1E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "朴翔 - 把悲伤留给自己 (Live).lrc"; sourceTree = "<group>"; };
+		FC86DEB01E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "朴翔 - 把悲伤留给自己 (Live).mp3"; sourceTree = "<group>"; };
+		FC86DEB11E0393150021ED11 /* 朴翔.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "朴翔.jpg"; sourceTree = "<group>"; };
+		FC86DEB21E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "陈奕迅 - 陪你度过漫长岁月 (国语).lrc"; sourceTree = "<group>"; };
+		FC86DEB31E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅 - 陪你度过漫长岁月 (国语).mp3"; sourceTree = "<group>"; };
+		FC86DECC1E0393950021ED11 /* XMMusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMusicModel.h; sourceTree = "<group>"; };
+		FC86DECD1E0393950021ED11 /* XMMusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMusicModel.m; sourceTree = "<group>"; };
+		FC86DECF1E03996F0021ED11 /* XMMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMusicPlayer.h; sourceTree = "<group>"; };
+		FC86DED01E03996F0021ED11 /* XMMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMusicPlayer.m; sourceTree = "<group>"; };
 		FCB6E9CA1E027AC200F1769E /* UIView+XMframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMframe.h"; sourceTree = "<group>"; };
 		FCB6E9CB1E027AC200F1769E /* UIView+XMframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMframe.m"; sourceTree = "<group>"; };
 		FCD114511E00DA9700195A46 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -186,6 +242,37 @@
 			path = XMMusicPlayerUITests;
 			sourceTree = "<group>";
 		};
+		FC86DE9B1E0393150021ED11 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FC86DE9C1E0393150021ED11 /* buyao.wav */,
+				FC86DE9D1E0393150021ED11 /* chatcome.wav */,
+				FC86DE9E1E0393150021ED11 /* eason.jpg */,
+				FC86DE9F1E0393150021ED11 /* test.wav */,
+				FC86DEA01E0393150021ED11 /* 包师语 - 彩虹 (Live).lrc */,
+				FC86DEA11E0393150021ED11 /* 包师语 - 彩虹 (Live).mp3 */,
+				FC86DEA21E0393150021ED11 /* 包师语.png */,
+				FC86DEA31E0393150021ED11 /* 安河桥北.jpg */,
+				FC86DEA41E0393150021ED11 /* 宋冬野 - 安河桥.lrc */,
+				FC86DEA51E0393150021ED11 /* 宋冬野 - 安河桥.mp3 */,
+				FC86DEA61E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).lrc */,
+				FC86DEA71E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).mp3 */,
+				FC86DEA81E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).lrc */,
+				FC86DEA91E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).mp3 */,
+				FC86DEAA1E0393150021ED11 /* 徐歌阳.jpg */,
+				FC86DEAB1E0393150021ED11 /* 徐歌阳1.jpg */,
+				FC86DEAC1E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).lrc */,
+				FC86DEAD1E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).mp3 */,
+				FC86DEAE1E0393150021ED11 /* 曾敏杰.png */,
+				FC86DEAF1E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).lrc */,
+				FC86DEB01E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).mp3 */,
+				FC86DEB11E0393150021ED11 /* 朴翔.jpg */,
+				FC86DEB21E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc */,
+				FC86DEB31E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FCD114501E00DA9700195A46 /* Appdelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +297,8 @@
 		FCD1145C1E00E1E100195A46 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				FC86DE9B1E0393150021ED11 /* Assets */,
+				FC86DE991E0393040021ED11 /* mlist.plist */,
 				FCB6E9CA1E027AC200F1769E /* UIView+XMframe.h */,
 				FCB6E9CB1E027AC200F1769E /* UIView+XMframe.m */,
 				FCD1145E1E00E28300195A46 /* XMPrefixHeader.pch */,
@@ -223,6 +312,10 @@
 				FC759CEC1E02384D0093C52E /* 朴翔.jpg */,
 				FCD1146E1E0122CC00195A46 /* XMMusicViewController.h */,
 				FCD1146F1E0122CC00195A46 /* XMMusicViewController.m */,
+				FC86DECC1E0393950021ED11 /* XMMusicModel.h */,
+				FC86DECD1E0393950021ED11 /* XMMusicModel.m */,
+				FC86DECF1E03996F0021ED11 /* XMMusicPlayer.h */,
+				FC86DED01E03996F0021ED11 /* XMMusicPlayer.m */,
 			);
 			path = "Music(音乐)";
 			sourceTree = "<group>";
@@ -337,12 +430,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC86DECB1E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 in Resources */,
+				FC86DECA1E0393150021ED11 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc in Resources */,
+				FC86DEB51E0393150021ED11 /* chatcome.wav in Resources */,
 				FCD114591E00DB0B00195A46 /* 引导页.png in Resources */,
+				FC86DEBA1E0393150021ED11 /* 包师语.png in Resources */,
+				FC86DEB71E0393150021ED11 /* test.wav in Resources */,
 				FC759CED1E02384D0093C52E /* 朴翔.jpg in Resources */,
+				FC86DE9A1E0393040021ED11 /* mlist.plist in Resources */,
+				FC86DEB61E0393150021ED11 /* eason.jpg in Resources */,
+				FC86DEC31E0393150021ED11 /* 徐歌阳1.jpg in Resources */,
 				FCD1145B1E00DED100195A46 /* Images.xcassets in Resources */,
+				FC86DEC01E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).lrc in Resources */,
+				FC86DEC21E0393150021ED11 /* 徐歌阳.jpg in Resources */,
+				FC86DEBD1E0393150021ED11 /* 宋冬野 - 安河桥.mp3 in Resources */,
 				FC5B8C261DFFDC65008C46EA /* LaunchScreen.storyboard in Resources */,
+				FC86DEBE1E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).lrc in Resources */,
+				FC86DEC41E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).lrc in Resources */,
+				FC86DEB81E0393150021ED11 /* 包师语 - 彩虹 (Live).lrc in Resources */,
+				FC86DEC81E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).mp3 in Resources */,
+				FC86DEC71E0393150021ED11 /* 朴翔 - 把悲伤留给自己 (Live).lrc in Resources */,
+				FC86DEC51E0393150021ED11 /* 曾敏杰 - 伤痕 (Live).mp3 in Resources */,
+				FC86DEC61E0393150021ED11 /* 曾敏杰.png in Resources */,
+				FC86DEB41E0393150021ED11 /* buyao.wav in Resources */,
+				FC86DEC91E0393150021ED11 /* 朴翔.jpg in Resources */,
 				FC5B8C231DFFDC65008C46EA /* Assets.xcassets in Resources */,
 				FC5B8C211DFFDC65008C46EA /* Main.storyboard in Resources */,
+				FC86DEC11E0393150021ED11 /* 徐歌阳 - 追梦赤子心 (Live).mp3 in Resources */,
+				FC86DEBF1E0393150021ED11 /* 徐歌阳 - 一万次悲伤 (Live).mp3 in Resources */,
+				FC86DEB91E0393150021ED11 /* 包师语 - 彩虹 (Live).mp3 in Resources */,
+				FC86DEBB1E0393150021ED11 /* 安河桥北.jpg in Resources */,
+				FC86DEBC1E0393150021ED11 /* 宋冬野 - 安河桥.lrc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,9 +533,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC86DECE1E0393950021ED11 /* XMMusicModel.m in Sources */,
 				FCB6E9CC1E027AC200F1769E /* UIView+XMframe.m in Sources */,
 				FCD114611E00E46C00195A46 /* XMadViewController.m in Sources */,
 				FCD114701E0122CC00195A46 /* XMMusicViewController.m in Sources */,
+				FC86DED11E03996F0021ED11 /* XMMusicPlayer.m in Sources */,
 				FCD114571E00DAE100195A46 /* XMLaunchView.m in Sources */,
 				FC5B8C1E1DFFDC65008C46EA /* ViewController.m in Sources */,
 				FC5B8C181DFFDC65008C46EA /* main.m in Sources */,
